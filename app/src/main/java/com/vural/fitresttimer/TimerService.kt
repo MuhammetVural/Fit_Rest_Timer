@@ -434,7 +434,7 @@ class TimerService : Service() {
             .setContentTitle("${currentMode.replaceFirstChar { it.uppercaseChar() }} Modu")
             .setStyle(NotificationCompat.BigTextStyle().bigText("Dinlenme sürenizi seçiniz"))
 
-            .setSmallIcon(android.R.drawable.ic_dialog_info)
+            .setSmallIcon(R.drawable.ic_notification_icon)
 
         actions.forEachIndexed { index, (action, label) ->
             builder.addAction(0, label, getPendingIntent(action))
